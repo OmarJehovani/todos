@@ -96,7 +96,7 @@ def update_task_in_list(list_name, task_id, field, change):
     store_list(df, list_name)
 
 
-def create_list(name):
+def create_list(name: str):
     df = pd.DataFrame(columns=["created", "task", "summary", "status", "owner"])
     store_list(df, name)
 
@@ -105,23 +105,23 @@ def get_existing_lists():
     return os.listdir(PATH_TO_DATA)
 
 
-def check_list_exists(name):
+def check_list_exists(name: str):
     return get_list_filename(name) in get_existing_lists()
 
 
-def get_list_filename(name):
+def get_list_filename(name: str):
     return f"{name}.csv"
 
 
-def load_list(name):
+def load_list(name: str):
     return pd.read_csv(get_list_path(name))
 
 
-def store_list(df, name):
+def store_list(df, name: str):
     df.to_csv(get_list_path(name), index=False)
 
 
-def get_list_path(name):
+def get_list_path(name: str):
     return f"{PATH_TO_DATA}{get_list_filename(name)}"
 
 

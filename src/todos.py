@@ -101,7 +101,7 @@ def create_list(name: str):
     store_list(df, name)
 
 
-def get_existing_lists():
+def get_existing_lists() -> list:
     return os.listdir(PATH_TO_DATA)
 
 

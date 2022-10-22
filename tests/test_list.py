@@ -55,6 +55,9 @@ def new_row():
 
 
 def test_get_list_path():
+    """
+    función para testear 
+    """
     assert todos.get_list_path("todos") == todos.PATH_TO_DATA + "todos.csv"
 
 

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "todos"
+version = "0.1.0"
+description = "Entregable del módulo 2, diplomado Despliegue de ML"
+authors = ["Omar Jehovani López Orozco"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

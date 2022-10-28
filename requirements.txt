@@ -1,0 +1,9 @@
+pandas
+pytest
+pyment
+typer
+tox
+poetry
+tabulate
+pycodestyle
+virtualenv

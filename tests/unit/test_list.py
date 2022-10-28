@@ -1,8 +1,11 @@
 import src.todos as todos
+import os 
+import sys 
 import pandas as pd
 import pytest
 import shutil
 from datetime import datetime
+#sys.path.append( os.path.abspath(os.path.dirname(__file__)+'/../..'))
 
 # @pytest.fixture()
 # def three_cards(cards_db):
@@ -62,7 +65,7 @@ def test_get_list_path():
 
 
 def test_get_filename():
-    assert todos.get_list_filename("data") == "data.csv"
+    assert todos.get_list_filename("todos") == "todos.csv"
 
 
 def test_create_list(tmp_dir, df_empty):
